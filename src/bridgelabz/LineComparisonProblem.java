@@ -33,7 +33,20 @@ System.out.println("Welcome to Compute Line Comparison program ");
      System.out.println("Please enter values for line 1");
      int lenthOfline_1 = getLengthOfLine(scanner);
      
-     System.out.println(" Length of Line is "+lenthOfline_1);
+    // System.out.println(" Length of Line is "+lenthOfline_1);
+     System.out.println("Please enter values for line 2");
+     int lenthOfline_2 = getLengthOfLine(scanner);
+    
+     String val1=String.valueOf(lenthOfline_1);
+     String val2=String.valueOf(lenthOfline_2);
+    
+     if(val1.equals(val2)){
+             System.out.println("Both lines are equal");
+     }
+     else {
+             System.out.println("Both lines are not equal");
+     }
+     scanner.close();
 
 }
 }
